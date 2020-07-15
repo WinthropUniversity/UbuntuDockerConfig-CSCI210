@@ -68,26 +68,6 @@ docker rmi <image-name>
 # e.g.:  docker rmi winthrop/csci210:v1
 ```
 
-If you exit 
-
-## Other Useful Commands
-
-To list all images available:
-```
-docker images
-```
-
-To list all running containers:
-```
-docker ps -a
-```
-
-To *remove* a container:
-```
-docker rm <container-name>
-# e.g.:  docker rmi winthrop/csci210:v1
-```
-
 There are ways to detach from a running container and re-attach to it, but that's a different discussion.  For now, after you exit, go ahead and clean up the container by removing it.  Don't remove the image or you will have to rebuild it.
 
 
