@@ -32,17 +32,24 @@ It's straightforward to deploy and run the image as a container now (use "docker
 We want to run the container *interactively* -- meaning, we want it to be like we're logged into that machine and can interact with it.  There are alternative ways to run containers, but that's another discussion.  We'll also name the container.  This is different than the image name.  You can, conceivably, run multiple container instances off the same image -- they just need unique names.  I'll keep this simple and give it the name "csci210".  On Windows, do this from the native Windows *CMD*.  On other platforms, use your terminal.  **NOTE:** Do not just copy and paste this line; you need to edit the path so it points to your persistent home directory.
 
 ```
-docker run --name csci210  -it  -v C:\wherever\you\cloned\UbuntuDockerConfig-CSCI210\persistent-homedir:/home/student  winthrop/csci210:v1
+docker run --name csci210  -it --rm -v C:\wherever\you\cloned\UbuntuDockerConfig-CSCI210\persistent-homedir:/home/student  winthrop/csci210:v1
 ```
 
 Breaking it down, this command says:
 1. Run a docker container
 2. Call it 'csci210'
 3. Run interactively
-4. Map a volume from my local drive to the /home/student directory in the container
-5. Use the winthrop/csci210:v1 image that we just built.
+4. Remove the container when you exit
+5. Map a volume from my local drive to the /home/student directory in the container
+6. Use the winthrop/csci210:v1 image that we just built.
 
 If you issued these commands, you should be at a linux command line, logged in as 'student' and in your home directory.
+
+## Detaching and Reattacing to a Running Container
+If you exit from the container, it will close and be cleaned up.  You'll have to run it again (see the previous section).  But you can also just *dettach* from the container and leave it running by pressing Ctl-p Ctl-q from inside it.  You can reattach at any time as follows:
+```
+docker attach csci210
+```
 
 ## Other Useful Commands
 
