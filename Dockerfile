@@ -10,7 +10,7 @@ RUN apt-get -yqq update
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 RUN apt-get -yqq install python3-pip python3-dev curl gnupg
 RUN apt-get -yqq install man less nano vim emacs git iputils-ping traceroute
-RUN apt-get -yqq install openjdk-14-jdk
+#RUN apt-get -yqq install openjdk-14-jdk
 RUN apt-get -yqq install default-jre
 RUN apt-get -yqq install gdb
 RUN apt-get -yqq install libncurses-dev
