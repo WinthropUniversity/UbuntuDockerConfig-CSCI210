@@ -1,5 +1,7 @@
 # Docker Ubuntu Image for Winthrop University, CSCI 210
 
+I added this pointless line to the readme.
+
 Paul Added this line to the readme. <-- remove this
 
 ## Overview
