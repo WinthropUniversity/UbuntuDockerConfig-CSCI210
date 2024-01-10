@@ -1,7 +1,5 @@
 # Docker Ubuntu Image for Winthrop University, CSCI 210
 
-Oops, I put this silly line back!
-
 ## Overview
 Docker is a tool that allows you to deploy linux "containers" on a variety of machines.  These are similar to virtual machines in the sense that each container execution runs in its own space, making it easy to deploy images across a variety of platforms.
 
