@@ -14,7 +14,7 @@ RUN apt-get -yqq install man less nano vim emacs git iputils-ping traceroute
 RUN apt-get -yqq install default-jre
 RUN apt-get -yqq install gdb
 RUN apt-get -yqq install libncurses-dev
-RUN apt-get -yqq install libgtk2.0-0 libcanberra-gtk-module
+#RUN apt-get -yqq install libgtk2.0-0 libcanberra-gtk-module
 
 ## Eclipse will have to be installed manually
 ##  Here's a link that may be useful, but I'm
